@@ -6,10 +6,10 @@ project_name = "mlproject"
 list_of_files = [
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
-    f"src/{project_name}/components/Data_ingestion/__init__.py",
-    f"src/{project_name}/components/Data_transformation/__init__.py",
+    f"src/{project_name}/components/Data_ingestion.py",
+    f"src/{project_name}/components/Data_transformation.py",
     f"src/{project_name}/components/Model_trainer.py",
-    f"src/{project_name}/components/MOdel_evaluation.py",
+    f"src/{project_name}/components/Model_evaluation.py",
     f"src/{project_name}/piplines/__init__.py",
     f"src/{project_name}/piplines/trainging_pipline.py",
     f"src/{project_name}/piplines/prediction_pipline.py",
