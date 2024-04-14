@@ -1,0 +1,4 @@
+[2024-04-09 10:14:19,130] 11 root - INFO - The execution has started
+[2024-04-09 10:14:19,134] 14 root - INFO - Reading database started
+[2024-04-09 10:14:20,480] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-09 10:14:20,999] 33 root - INFO - Data Ingestion is completed

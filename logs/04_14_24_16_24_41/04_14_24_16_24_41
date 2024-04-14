@@ -1,0 +1,22 @@
+[2024-04-14 16:24:46,090] 13 root - INFO - The execution has started
+[2024-04-14 16:24:46,125] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-14 16:24:46,339] 36 root - INFO - Data Ingestion is completed
+[2024-04-14 16:24:46,404] 55 root - INFO - Reading the training and the test data sets
+[2024-04-14 16:24:46,405] 56 root - INFO - Train columns: Index(['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Geography',
+       'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+       'IsActiveMember', 'EstimatedSalary', 'Exited'],
+      dtype='object')
+[2024-04-14 16:24:46,406] 57 root - INFO - Test columns: Index(['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Geography',
+       'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+       'IsActiveMember', 'EstimatedSalary', 'Exited'],
+      dtype='object')
+[2024-04-14 16:24:46,407] 59 root - INFO - Reading the training and the test data sets
+[2024-04-14 16:24:46,407] 39 root - INFO - Categorical columns:['Geography', 'Gender']
+[2024-04-14 16:24:46,407] 40 root - INFO - Numerical columns:['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-14 16:24:46,410] 83 root - INFO - Train columns before transformation: Index(['CreditScore', 'Geography', 'Gender', 'Age', 'Tenure', 'Balance',
+       'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary'],
+      dtype='object')
+[2024-04-14 16:24:46,411] 84 root - INFO - Test columns before transformation: Index(['CreditScore', 'Geography', 'Gender', 'Age', 'Tenure', 'Balance',
+       'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary'],
+      dtype='object')
+[2024-04-14 16:24:46,469] 94 root - INFO - saved the preprocessing object

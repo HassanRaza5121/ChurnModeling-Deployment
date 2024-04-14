@@ -1,0 +1,8 @@
+[2024-04-13 16:51:12,901] 13 root - INFO - The execution has started
+[2024-04-13 16:51:12,942] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-13 16:51:13,172] 35 root - INFO - Data Ingestion is completed
+[2024-04-13 16:51:13,244] 55 root - INFO - Reading the training and the test data sets
+[2024-04-13 16:51:13,244] 40 root - INFO - Categorical columns:['Geography', 'Gender', 'Surname']
+[2024-04-13 16:51:13,245] 41 root - INFO - Numerical columns:['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']
+[2024-04-13 16:51:13,249] 75 root - INFO - Applying the Preprocessor
+[2024-04-13 16:51:13,250] 25 root - INFO - CustomException

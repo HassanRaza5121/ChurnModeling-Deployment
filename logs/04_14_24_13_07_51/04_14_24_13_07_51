@@ -1,0 +1,7 @@
+[2024-04-14 13:07:56,866] 13 root - INFO - The execution has started
+[2024-04-14 13:07:56,914] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-14 13:07:57,373] 36 root - INFO - Data Ingestion is completed
+[2024-04-14 13:07:57,570] 57 root - INFO - Reading the training and the test data sets
+[2024-04-14 13:07:57,571] 61 root - INFO - Reading the training and the test data sets
+[2024-04-14 13:07:57,573] 40 root - INFO - Categorical columns:['Geography', 'Gender', 'Surname']
+[2024-04-14 13:07:57,574] 41 root - INFO - Numerical columns:['RowNumber', 'CustomerId', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']

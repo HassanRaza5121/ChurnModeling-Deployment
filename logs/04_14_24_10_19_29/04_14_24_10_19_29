@@ -1,0 +1,23 @@
+[2024-04-14 10:19:31,104] 13 root - INFO - The execution has started
+[2024-04-14 10:19:31,128] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-14 10:19:31,233] 35 root - INFO - Data Ingestion is completed
+[2024-04-14 10:19:31,270] 57 root - INFO - Reading the training and the test data sets
+[2024-04-14 10:19:31,270] 58 root - INFO - train path artifacts/train.csv
+[2024-04-14 10:19:31,270] 40 root - INFO - Categorical columns:['Geography', 'Gender', 'Surname']
+[2024-04-14 10:19:31,270] 41 root - INFO - Numerical columns:['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']
+[2024-04-14 10:19:31,295] 71 root - INFO - input_feature_train_df      RowNumber  CustomerId      Surname  CreditScore  ... NumOfProducts HasCrCard  IsActiveMember  EstimatedSalary
+0          9255    15601116         P'an          686  ...             2         1               1        179093.26
+1          1562    15766374         Leak          632  ...             2         1               1        195978.86
+2          1671    15716994        Green          559  ...             1         1               0         85891.02
+3          6088    15730759     Chukwudi          561  ...             1         1               0        153080.40
+4          6670    15797900     Chinomso          517  ...             1         0               0         39488.04
+...         ...         ...          ...          ...  ...           ...       ...             ...              ...
+7995       5735    15596647    Henderson          768  ...             1         1               1         69381.05
+7996       5192    15681075  Chukwualuka          682  ...             1         1               1           706.50
+7997       5391    15573851    Macrossan          735  ...             3         0               0         92220.12
+7998        861    15807663     McGregor          667  ...             1         1               0         97508.04
+7999       7271    15706268        Smith          697  ...             1         1               1         53581.14
+
+[8000 rows x 13 columns]
+[2024-04-14 10:19:31,296] 79 root - INFO - Applying the Preprocessor
+[2024-04-14 10:19:31,296] 25 root - INFO - CustomException

@@ -1,0 +1,16 @@
+[2024-04-14 12:52:49,387] 13 root - INFO - The execution has started
+[2024-04-14 12:52:49,498] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-14 12:52:49,927] 36 root - INFO - Data Ingestion is completed
+[2024-04-14 12:52:50,050] 57 root - INFO - Reading the training and the test data sets
+[2024-04-14 12:52:50,052] 58 root - INFO - Train columns: Index(['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Geography',
+       'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+       'IsActiveMember', 'EstimatedSalary', 'Exited'],
+      dtype='object')
+[2024-04-14 12:52:50,052] 59 root - INFO - Test columns: Index(['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Geography',
+       'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+       'IsActiveMember', 'EstimatedSalary', 'Exited'],
+      dtype='object')
+[2024-04-14 12:52:50,053] 61 root - INFO - Reading the training and the test data sets
+[2024-04-14 12:52:50,053] 40 root - INFO - Categorical columns:['Geography', 'Gender', 'Surname']
+[2024-04-14 12:52:50,053] 41 root - INFO - Numerical columns:['RowNumber', 'CustomerId', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-14 12:52:50,058] 25 root - INFO - CustomException

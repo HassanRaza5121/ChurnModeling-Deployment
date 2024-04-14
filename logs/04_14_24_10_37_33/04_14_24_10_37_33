@@ -1,0 +1,22 @@
+[2024-04-14 10:37:34,916] 13 root - INFO - The execution has started
+[2024-04-14 10:37:34,936] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-14 10:37:35,041] 35 root - INFO - Data Ingestion is completed
+[2024-04-14 10:37:35,077] 57 root - INFO - Reading the training and the test data sets
+[2024-04-14 10:37:35,092] 58 root - INFO - train path       RowNumber  CustomerId   Surname  CreditScore Geography  ... NumOfProducts  HasCrCard  IsActiveMember  EstimatedSalary  Exited
+0          6253    15687492  Anderson          596   Germany  ...             2          0               0         41788.37       0
+1          4685    15736963   Herring          623    France  ...             2          1               1        146379.30       0
+2          1732    15721730    Amechi          601     Spain  ...             2          1               0         58561.31       0
+3          4743    15762134     Liang          506   Germany  ...             2          1               1        170679.74       0
+4          4522    15648898    Chuang          560     Spain  ...             1          1               1        114669.79       0
+...         ...         ...       ...          ...       ...  ...           ...        ...             ...              ...     ...
+1995       6413    15598982     Klein          602   Germany  ...             1          0               1         45038.29       1
+1996       8286    15572631  Ndubuisi          609    France  ...             1          0               1        109895.16       0
+1997       7854    15746674    Miller          730    France  ...             1          1               0         33373.26       1
+1998       1096    15689081        Wu          692    France  ...             1          1               0         76755.99       1
+1999       6930    15651627     White          628   Germany  ...             1          1               1        107674.30       1
+
+[2000 rows x 14 columns]
+[2024-04-14 10:37:35,092] 40 root - INFO - Categorical columns:['Geography', 'Gender', 'Surname']
+[2024-04-14 10:37:35,092] 41 root - INFO - Numerical columns:['RowNumber', 'CustomerId', 'Surname', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']
+[2024-04-14 10:37:35,093] 79 root - INFO - Applying the Preprocessor
+[2024-04-14 10:37:35,095] 25 root - INFO - CustomException
