@@ -53,8 +53,8 @@ class Datatransformation:
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
             logging.info('Reading the training and the test data sets')
-            logging.info(f'Train columns: {train_df.columns}')
-            logging.info(f'Test columns: {test_df.columns}')
+            #logging.info(f'Train columns: {train_df.columns}')
+            #logging.info(f'Test columns: {test_df.columns}')
 
             logging.info('Reading the training and the test data sets')
             #logging.info(f'train path {test_df}')
@@ -80,8 +80,8 @@ class Datatransformation:
 
             traget_feature_test_df = test_df[target_column_name]
 
-            logging.info(f'Train columns before transformation: {input_feature_train_df.columns}')
-            logging.info(f'Test columns before transformation: {input_feature_test_df.columns}')
+            #logging.info(f'Train columns before transformation: {input_feature_train_df.columns}')
+            #logging.info(f'Test columns before transformation: {input_feature_test_df.columns}')
 
             input_feature_train_arr=preprocessor_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessor_obj.transform(input_feature_test_df)

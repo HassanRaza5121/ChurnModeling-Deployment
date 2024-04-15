@@ -1,0 +1,10 @@
+[2024-04-15 11:48:41,291] 13 root - INFO - The execution has started
+[2024-04-15 11:48:41,334] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-15 11:48:41,562] 36 root - INFO - Data Ingestion is completed
+[2024-04-15 11:48:41,630] 55 root - INFO - Reading the training and the test data sets
+[2024-04-15 11:48:41,630] 59 root - INFO - Reading the training and the test data sets
+[2024-04-15 11:48:41,630] 39 root - INFO - Categorical columns:['Geography', 'Gender']
+[2024-04-15 11:48:41,630] 40 root - INFO - Numerical columns:['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-15 11:48:41,691] 94 root - INFO - saved the preprocessing object
+[2024-04-15 11:48:41,694] 26 root - INFO - split training and test input data
+[2024-04-15 11:49:46,411] 68 root - INFO - best Model found on both training and testing data score is :{best_model_score} and the model name is :{best_model_name} 
