@@ -1,0 +1,14 @@
+[2024-04-17 11:19:25,955] 13 root - INFO - The execution has started
+[2024-04-17 11:19:25,973] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-17 11:19:26,078] 36 root - INFO - Data Ingestion is completed
+[2024-04-17 11:19:26,113] 55 root - INFO - Reading the training and the test data sets
+[2024-04-17 11:19:26,113] 59 root - INFO - Reading the training and the test data sets
+[2024-04-17 11:19:26,113] 39 root - INFO - Categorical columns:['Geography', 'Gender']
+[2024-04-17 11:19:26,113] 40 root - INFO - Numerical columns:['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-17 11:19:26,144] 94 root - INFO - saved the preprocessing object
+[2024-04-17 11:19:26,147] 39 root - INFO - split training and test input data
+[2024-04-17 11:19:48,030] 86 root - INFO - best model index is RandomForestClassifier
+[2024-04-17 11:19:48,032] 89 root - INFO - best model name is :RandomForestClassifier(max_depth=10, n_estimators=50)
+[2024-04-17 11:19:48,033] 93 root - INFO - model names are :['DecisionTreeClassifier', 'RandomForestClassifier', 'LogisticRegression']
+[2024-04-17 11:19:48,033] 98 root - INFO - Actual model is RandomForestClassifier
+[2024-04-17 11:19:56,338] 139 root - INFO - best Model found on both training and testing data score is :0.866 and the model name is :RandomForestClassifier(max_depth=10, n_estimators=50) 

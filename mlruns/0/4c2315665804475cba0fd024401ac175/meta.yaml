@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ST/Desktop/mldeployement/mlruns/0/4c2315665804475cba0fd024401ac175/artifacts
+end_time: 1713334521282
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4c2315665804475cba0fd024401ac175
+run_name: omniscient-vole-151
+run_uuid: 4c2315665804475cba0fd024401ac175
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713334521163
+status: 4
+tags: []
+user_id: root

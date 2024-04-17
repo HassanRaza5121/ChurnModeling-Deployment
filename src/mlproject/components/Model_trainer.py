@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import mlflow.sklearn
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -9,6 +11,8 @@ from sklearn.metrics import mean_absolute_error
 from src.mlproject.logger import logging
 from src.mlproject.exception import CustomExceptiom
 from sklearn.metrics import r2_score,f1_score,recall_score,precision_score
+import mlflow
+from urllib.parse import urlparse
 
 from dataclasses import dataclass
 import os
@@ -21,6 +25,15 @@ class ModelTrainerConfig:
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
+    def eval_metrics(self,actual,pred):
+        f1sc  = f1_score(actual,pred)
+        prcn = precision_score(actual,pred)
+        recall = recall_score(actual,pred)
+        return(
+            f1sc,
+            prcn,
+            recall
+        )
     def initiate_model_trainer(self,train_arr,test_arr):
         try:
             logging.info('split training and test input data')
@@ -30,28 +43,36 @@ class ModelTrainer:
                 test_arr[:,:-1],
                 test_arr[:,-1]
             )
+            
+            
+            
+            
             models = {
 
-                'Decision Tree':DecisionTreeClassifier(),
-                'Logistic Regression':LogisticRegression(),
-                'Random Forest':RandomForestClassifier(),
+                'DecisionTreeClassifier':DecisionTreeClassifier(),
+                'LogisticRegression':LogisticRegression(),
+                'RandomForestClassifier':RandomForestClassifier(),
                 
 
                 }
+            
+            
+            
+            
             params={
 
-                'Decision Tree':
+                'DecisionTreeClassifier':
                 {
                     'criterion':['entropy','log_loss','gini']
 
                 
                 },
-                'Random Forest': 
+                'RandomForestClassifier': 
                 {
                     'n_estimators': [50, 100, 200], 'max_depth': [None, 10, 20]
                  }
 ,
-                'Logistic Regression':{
+                'LogisticRegression':{
                     'C': [0.1, 1, 10]
                 },
                 
@@ -62,7 +83,57 @@ class ModelTrainer:
             best_model_name_index = list(model_report.keys())[
                 list(model_report.values()).index(best_model_score)
             ]
+            logging.info(f'best model index is {best_model_name_index}')
+
             best_model_name = models[best_model_name_index]
+            logging.info(f'best model name is :{best_model_name}')
+            print('Best Model name is:')
+            print(f'{best_model_name}')
+            model_names = list(params.keys())
+            logging.info(f'model names are :{model_names}')
+            actual_model = ""
+            for model in models:
+                if model == best_model_name_index:
+                    actual_model = best_model_name_index
+            logging.info(f'Actual model is {actual_model}')
+            
+            best_params = params[actual_model]
+           
+           
+           
+            mlflow.set_registry_uri('https://dagshub.com/HassanRaza5121/mldeployement.mlflow')
+            tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+            
+            
+            
+            
+            # mlflow
+            with mlflow.start_run():
+                predicted_qualities = best_model_name.predict(X_test)
+                (f1sc , prcn, recall) = self.eval_metrics(y_test,predicted_qualities)
+                mlflow.log_params(best_params)
+
+                mlflow.log_metric('f1_score',f1sc) 
+                mlflow.log_metric('precision',prcn)
+                mlflow.log_metric('recall', recall)
+
+
+            # Model registry does not work with the file store
+            if tracking_url_type_store != "file":
+                #register the model
+                #
+                mlflow.sklearn.log_model(best_model_name,"model",registered_model_name=actual_model)
+            else:
+                mlflow.sklearn.log_model(best_model_name ,'model')
+
+
+
+
+
+
+
+
+
             if best_model_score<0.6:
                 print('No best Model found')
             logging.info(f'best Model found on both training and testing data score is :{best_model_score} and the model name is :{best_model_name} ')

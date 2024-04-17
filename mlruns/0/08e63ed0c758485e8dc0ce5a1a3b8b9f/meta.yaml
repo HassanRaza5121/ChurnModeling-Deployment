@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ST/Desktop/mldeployement/mlruns/0/08e63ed0c758485e8dc0ce5a1a3b8b9f/artifacts
+end_time: 1713334796361
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 08e63ed0c758485e8dc0ce5a1a3b8b9f
+run_name: auspicious-wolf-6
+run_uuid: 08e63ed0c758485e8dc0ce5a1a3b8b9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713334788827
+status: 3
+tags: []
+user_id: root

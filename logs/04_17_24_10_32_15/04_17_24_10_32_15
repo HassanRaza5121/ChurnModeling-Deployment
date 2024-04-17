@@ -1,0 +1,12 @@
+[2024-04-17 10:32:18,482] 13 root - INFO - The execution has started
+[2024-04-17 10:32:18,499] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-17 10:32:18,602] 36 root - INFO - Data Ingestion is completed
+[2024-04-17 10:32:18,632] 55 root - INFO - Reading the training and the test data sets
+[2024-04-17 10:32:18,632] 59 root - INFO - Reading the training and the test data sets
+[2024-04-17 10:32:18,633] 39 root - INFO - Categorical columns:['Geography', 'Gender']
+[2024-04-17 10:32:18,633] 40 root - INFO - Numerical columns:['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-17 10:32:18,659] 94 root - INFO - saved the preprocessing object
+[2024-04-17 10:32:18,660] 39 root - INFO - split training and test input data
+[2024-04-17 10:32:44,176] 90 root - INFO - model names are :['Decision Tree', 'Random Forest', 'Logistic Regression']
+[2024-04-17 10:32:44,176] 95 root - INFO - Actual model is 
+[2024-04-17 10:32:44,176] 30 root - INFO - CustomException

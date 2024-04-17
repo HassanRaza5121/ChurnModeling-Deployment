@@ -1,0 +1,14 @@
+[2024-04-17 11:25:33,082] 13 root - INFO - The execution has started
+[2024-04-17 11:25:33,098] 26 root - INFO - Reading completed from MYSQL data
+[2024-04-17 11:25:33,197] 36 root - INFO - Data Ingestion is completed
+[2024-04-17 11:25:33,228] 55 root - INFO - Reading the training and the test data sets
+[2024-04-17 11:25:33,228] 59 root - INFO - Reading the training and the test data sets
+[2024-04-17 11:25:33,228] 39 root - INFO - Categorical columns:['Geography', 'Gender']
+[2024-04-17 11:25:33,228] 40 root - INFO - Numerical columns:['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[2024-04-17 11:25:33,255] 94 root - INFO - saved the preprocessing object
+[2024-04-17 11:25:33,256] 39 root - INFO - split training and test input data
+[2024-04-17 11:25:58,614] 86 root - INFO - best model index is RandomForestClassifier
+[2024-04-17 11:25:58,615] 89 root - INFO - best model name is :RandomForestClassifier(n_estimators=200)
+[2024-04-17 11:25:58,616] 93 root - INFO - model names are :['DecisionTreeClassifier', 'RandomForestClassifier', 'LogisticRegression']
+[2024-04-17 11:25:58,616] 98 root - INFO - Actual model is RandomForestClassifier
+[2024-04-17 11:26:02,208] 30 root - INFO - CustomException
